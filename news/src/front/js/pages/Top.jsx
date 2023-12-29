@@ -2,6 +2,8 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from '../component/navbar';
 import SearchBar from '../component/SearchBar';
+import WeatherComponent from '../component/weather';
+
 
 const NewsComponent = () => {
   const [news, setNews] = useState([]);
@@ -55,6 +57,7 @@ const NewsComponent = () => {
   return (
     <div>
       <Navbar onTopicSelect={handleTopicSelect} />
+      <WeatherComponent/>
       <div className="container mt-4">
         <h1 className="mb-4">Top Headlines</h1>
         <SearchBar onSearch={searchNews} />

@@ -99,6 +99,7 @@ const WeatherComponent = () => {
                 <p className="card-text">Wind Speed: {currentWeather?.current?.wind_mph} mph</p>
                 <p className="card-text">Precipitation: {currentWeather?.current?.precip_in} in</p>
                 <p className="card-text">Humidity: {currentWeather?.current?.humidity} %</p>
+                <p className="card-text">Day/Night: {currentWeather?.current?.is_day ? 'Day' : 'Night'}</p>
                 <p className="card-text">Feels Like: {currentWeather?.current?.feelslike_f}°F</p>
                 <p className="card-text">Last Updated: {new Date(currentWeather?.current?.last_updated).toLocaleTimeString('en-US', { hour12: true })}</p>
                 <button className="btn btn-primary" onClick={handleViewForecast}>

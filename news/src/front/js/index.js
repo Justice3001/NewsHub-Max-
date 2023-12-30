@@ -9,9 +9,10 @@ import "../styles/index.css";
 import Layout from "./layout";
 import Top from "./pages/Top.jsx";
 import WeatherComponent from "./component/weather.js";
+import StockData from "./component/stockdata.js";
 
 //render your react application
 //ReactDOM.render(<Layout />, document.querySelector("#app"));
 //ReactDOM.render(<Top />, document.querySelector("#app"));
 //ReactDOM.render(<WeatherComponent />, document.querySelector("#app"));
-ReactDOM.render(<Top />, document.querySelector("#app"));
+ReactDOM.render(<StockData />, document.querySelector("#app"));
